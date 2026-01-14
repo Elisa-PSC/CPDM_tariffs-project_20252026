@@ -78,35 +78,7 @@ All data obtained from the World Bank's World Integrated Trade Solution (WITS):
   - Wealth quartiles (categorical)
   - Trade as % of GDP (openness measure)
 
-## Technical Implementation
-
-### Requirements
-
-```python
-pandas >= 1.3.0
-numpy >= 1.21.0
-matplotlib >= 3.4.0
-seaborn >= 0.11.0
-scipy >= 1.7.0
-scikit-learn >= 0.24.0
-plotly >= 5.0.0
-```
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/tariff-wealth-analysis.git
-cd tariff-wealth-analysis
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the analysis (if using Jupyter)
-jupyter notebook collab_reviewed_version.ipynb
-```
-
-### Project Structure
+## Project Structure
 
 ```
 tariff-wealth-analysis/
