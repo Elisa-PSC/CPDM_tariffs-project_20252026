@@ -91,12 +91,18 @@ tariff-wealth-analysis/
 └── LICENSE                         # MIT License
 ```
 
-## Visualizations [to be modified]
+## Visualizations
 
-The analysis generates several key visualizations:
+The analysis generates eight key visualizations:
 
-1. **Scatter Plot with Regression Line** - GDP vs. Tariff Rate relationship
-2. .....
+1. **Evolution of Tariff Rates by Wealth Level (2000-2022)**: time series comparing tariff trends across wealth quartiles;
+2. **Global Tariff Distribution Map (2022)**: choropleth map of worldwide tariff rates;
+3. **Policy Gap: Top 10 vs. Bottom 10 Countries (2022)** : horizontal bar chart with reference means;
+4. **Average Tariff Rates by Wealth Level** : bar chart showing the inverse relationship between wealth and tariffs;
+5. **Poorest vs. Richest Countries: Tariff Trends** : dual-axis comparison of absolute rates and percentage changes;
+6. **GDP vs. Tariff Rate Relationship**: scatter plot with regression demonstrating negative correlation;
+7. **High vs Low Trade Openness (Full)** : box plot with complete distribution including extreme outliers;
+8. **High vs Low Trade Openness (Capped)**: box plot comparison excluding outliers above 100%.
 
 ## Authors
 
