@@ -45,17 +45,17 @@ All data obtained from the World Bank's World Integrated Trade Solution (WITS):
 1. **Descriptive Statistics** </br>
    We summarized the data using measures of central tendency (mean and median) and dispersion (standard deviation and range), while also examining temporal trends over time.
 
-2. **Correlation Analysis** </br>
-   Relationships between variables were assessed using Pearson correlation coefficients. GDP values were log-transformed to normalize the distribution, and correlations with trade openness were specifically evaluated.
+2. **Exploratory Data Analysis** </br>
+   The dataset was explored by segmenting countries into wealth quartiles, identifying outliers via z-scores, analyzing volatility across nations and visualizing geographic patterns.
 
-3. **Regression Analysis** </br>
+3. **Correlation Analysis** </br>
+   Relationships between variables were assessed using Pearson correlation coefficients. GDP values were log-transformed to normalize the distribution and correlations with trade openness were specifically evaluated.
+
+4. **Regression Analysis** </br>
    Linear regression models were fitted to explore the relationship between tariff rates and log-transformed GDP ( $\text{Tariff Rate} \sim \log_{10}(\text{GDP})$ ). Model fit was evaluated using $R^2$, and statistical significance was tested through p-values.
 
-4. **Hypothesis Testing** </br>
+5. **Hypothesis Testing** </br>
    Differences between groups were tested using two-sample t-tests, focusing on the poorest versus richest quartiles and variations in trade openness. All tests used a significance threshold of $\alpha = 0.05$.
-
-5. **Exploratory Data Analysis** </br>
-   The dataset was further explored by segmenting countries into wealth quartiles, identifying outliers via z-scores, analyzing volatility across nations, and visualizing geographic patterns.
 
 ### Key Variables
 
@@ -70,15 +70,17 @@ All data obtained from the World Bank's World Integrated Trade Solution (WITS):
 ```
 tariff-wealth-analysis/
 │
-├── collab_file_name.ipynb          # Main analysis script
-├── README.md                       # This file
+├── CPDM_GDP_Tariffs_Barel_Naccari_Oezguer_Pascon_v1.ipynb         # Main analysis script
+├── CPDM_GDP_Tariffs_presentation_Barel-Naccari-Oezguer-Pascon_v1  # Presentation in PDF
+├── CPDM_GDP_Tariffs_Barel_Naccari_Oezguer_Pascon_v1.pdf           # Exported script in PDF
+├── README.md                                                      # This file
 │
-├── data/                           # Data directory
+├── data/                                                          # Data directory
 │   ├── WITS-Product_bycountry_all.csv
 │   ├── WITS-Country-GDP_USD_all.csv
 │   └── WITS-Trade_percentage_of_GDP_all.csv
 │
-├── figures/                        # Generated visualizations
+├── plots/                                                         # Generated visualizations
 │   ├── fig_evolution_by_wealth.png
 │   ├── fig_map.png
 │   ├── fig_top_10_bottom.png
